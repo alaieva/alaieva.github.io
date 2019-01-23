@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Pattaya', sans-serif;
+}
+
+body{
+	margin:0;
+	background: #FFF2E3;
+
+}
+form{
+	width: 70%;
+	max-width: 500px;
+	height:500px;
+	margin:60px auto 0; 
+	text-align: center;
+	position: relative;
+	box-shadow: 0 0 6px 3px rgba(0,0,0,.1);
+}
+.top{
+	background: #ffffff;
+	height: 30%;
+	padding: 0 40px 200px 50px;
+}
+	
+h2{
+	text-transform: uppercase;
+	color:#FF6B6B;
+	text-shadow: 1px 1px 2px black,
+	
+}
+.top:before {
+  display: inline-block;
+  margin-top: -45px;
+  content: url(https://html5book.ru/wp-content/uploads/2017/05/form-flower.png);
+}
+
+.content{
+    background:#FFF8F3;
+    height: 70%;
+    position: relative;
+}
+.content:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+.main{
+	padding:20px;
+}
+input,select{
+	display: block;
+	height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  margin:0 auto;
+  background: #ffffff;
+  border: 1px solid #DDDDDD;
+  font-size: 20px;
+  font-family: 'Pattaya', sans-serif;
+  color: #808080;
+  outline: none;
+  border-radius: 20px;
+  
+}
+label{
+	display: block;
+	padding: 20px;
+	text-transform: uppercase;
+	font-family: 'Pattaya', sans-serif;
+}
+.content input:focus,
+.content select:focus {border-color: #C44D58;}
+button{
+	outline: none;
+	border-radius: 20px;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	margin: 20px 0;
+	color: #ffffff;
+	border-width: 0;
+	transition: .2s linear;
+	background: #FF6B6B;
+}
+button:hover {
+	background: #C44D58;
+	transform: scale(1.1);
+}
